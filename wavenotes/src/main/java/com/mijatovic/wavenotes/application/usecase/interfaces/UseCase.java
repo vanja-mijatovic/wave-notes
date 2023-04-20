@@ -19,22 +19,22 @@ public interface UseCase<I extends UseCase.InputValues, O extends UseCase.Output
     /**
      * An interface for defining input values for use cases.
      */
-    public interface InputValues {}
+    interface InputValues {}
 
     /**
      * An interface for defining output values for use cases.
      */
-    public interface OutputValues {}
+    interface OutputValues {}
 
     /**
      * An implementation of the {@link InputValues} interface representing a use case with no input.
      */
-    public static class VoidInput implements InputValues {}
+    class VoidInput implements InputValues {}
 
     /**
      * An implementation of the {@link OutputValues} interface representing a use case with no output.
      */
-    public static class VoidOutput implements OutputValues {}
+    class VoidOutput implements OutputValues {}
 
     /**
      * Executes the use case with the given input values.
